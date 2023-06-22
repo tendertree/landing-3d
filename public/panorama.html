@@ -88,7 +88,7 @@
 
 	//panorama 2 setting
 	pano_2_right = new PANOLENS.Infospot(1000, PANOLENS.DataImage.Arrow);
-	pano_2_right.position.set(1500, 1000, -6000);
+	pano_2_right.position.set(5500, 1000, -2000);
 	pano_2_right.addEventListener('click', function () {
 		viewer.setPanorama(panorama_3);
 	});
@@ -101,10 +101,10 @@
 
 
 	btn_pano_2 = new PANOLENS.Infospot(
-		1000,
+		1500,
 		'item/2.m.m.png'
 	);
-	btn_pano_2.position.set(1000, 20, -1500);
+	btn_pano_2.position.set(5500, 350, 200);
 	btn_pano_2.addHoverText("conssul", 100);
 	btn_pano_2.addEventListener("click", function () {
 		this.focus();
