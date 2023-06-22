@@ -149,16 +149,17 @@ panorama_3.add(pano_3_right,pano_3_left,btn_pano_3);
 
 //panorama 4 setting
 pano_4_right = new PANOLENS.Infospot( 1000, PANOLENS.DataImage.Arrow );
-pano_4_right.position.set( -5000, 1000, 2000 );
+pano_4_right.position.set( 3000, 1000, -5000 );
 pano_4_right.addEventListener( 'click', function(){
   viewer.setPanorama( panorama_2 );
 } );
 
 
 btn_pano_4 = new PANOLENS.Infospot( 
-  100,
-PANOLENS.DataImage.Info );
-btn_pano_4.position.set( -100, 50, -450 );
+  400, 
+  'item/4.m.l.png'
+);
+btn_pano_4.position.set( -500, 30, -300 );
 btn_pano_4.addHoverText( "bs highschool", 100 );
 btn_pano_4.addEventListener( "click", function(){
   this.focus();
@@ -183,7 +184,7 @@ panorama_5.add(pano_5_right);
 
 
 
-viewer.add(panorama_4,panorama_5,panorama_1,panorama_3,panorama_2);
+viewer.add(panorama_2,panorama_5,panorama_1,panorama_3,panorama_4);
   if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))
     viewer.enableControl(PANOLENS.CONTROLS.DEVICEORIENTATION);
 </script>
