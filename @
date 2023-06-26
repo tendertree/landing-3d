@@ -159,7 +159,7 @@
 	btn_pano_4 = new PANOLENS.Infospot(
 		100,
 		PANOLENS.DataImage.Info);
-	btn_pano_4.position.set(300, 30, -200);
+	btn_pano_4.position.set(100, 50, 50);
 	btn_pano_4.addHoverText("bs highschool", 100);
 	btn_pano_4.addEventListener("click", function () {
 		this.focus();
