@@ -43,16 +43,15 @@
 		container: document.querySelector('#viewer'),
 		autoRotate: true,
 		autoRotateSpeed: 0.1,
-		output: 'overlay'
+		output: 'overlay',
+		cameraFov: 120,
 	});
 	let panorama_1 = new PANOLENS.ImagePanorama('assets/1.png');
-	let panorama_2 = new PANOLENS.ImagePanorama('assets/upscaler/2.jpeg');
+	let panorama_2 = new PANOLENS.ImagePanorama('assets/2.png');
 	let panorama_3 = new PANOLENS.ImagePanorama('assets/3.png');
 	let panorama_4 = new PANOLENS.ImagePanorama('assets/4.png');
 	let panorama_5 = new PANOLENS.ImagePanorama('assets/5.png');
 
-	viewer.getCamera().fov = 103;
-	viewer.getCamera().updateProjectionMatrix();
 
 
 	//infospot add 
